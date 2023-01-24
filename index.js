@@ -3,10 +3,10 @@ const fs = require('fs');
 
 
 inquirer
-    .prompt([
-        {
-            type: 'input',
-            name: 'name',
-            message:'what is your name'
-        }
-    ])
+  .prompt([
+    {
+      type: 'input',
+      name: 'name',
+      message: 'what is your name'
+    }
+  ])
