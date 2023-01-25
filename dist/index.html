@@ -1,8 +1,4 @@
-const inquirer = require('inquirer');
-const Employee = require("./lib/employee")
-const fs = require('fs');
-
-const temp = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,18 +10,4 @@ const temp = `<!DOCTYPE html>
 <body>
     doodoo
 </body>
-</html>`
-
-async function init() {
-  let name = new Employee();
-  name.getName()
-  name.getId();
-};
-
-function writeToFile(){
-  const fs = require('fs');
-  fs.appendFile('./dist/index.html',`${temp}`,(err) => err ? console.error(err) : console.log('commit logged'))
-}
-
-// init();
-writeToFile();
+</html>
